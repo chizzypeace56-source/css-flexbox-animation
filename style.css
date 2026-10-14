@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #050816;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 28px;
+  color: #8ecae6;
+  margin-bottom: 12px;
+}
+
+body > p {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+.space {
+  width: 320px;
+  height: 320px;
+  max-width: 90vw;
+  max-height: 90vw;
+  position: relative;
+  margin: 35px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.earth {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #7dd3fc,
+    #2563eb 55%,
+    #082f75
+  );
+  box-shadow: 0 0 25px #2588ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.orbit {
+  width: 280px;
+  height: 280px;
+  border: 1px dashed #64748b;
+  border-radius: 50%;
+  position: absolute;
+  animation: orbit-moon 6s linear infinite;
+}
+
+.moon {
+  width: 32px;
+  height: 32px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #ffffff,
+    #b8c1cc 60%,
+    #64748b
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 16px);
+  box-shadow: 0 0 12px #cbd5e1;
+}
+
+.caption {
+  color: #8ecae6;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@keyframes orbit-moon {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 350px) {
+  .space {
+    width: 280px;
+    height: 280px;
+  }
+
+  .orbit {
+    width: 240px;
+    height: 240px;
+  }
+}

@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Choose Your Plan</h1>
+    <p>Simple and affordable plans for everyone</p>
+  </header>
+
+  <main class="pricing-container">
+
+    <section class="pricing-card">
+      <h2>Basic</h2>
+      <p class="price">₦5,000<span>/month</span></p>
+      <p class="description">Perfect for beginners</p>
+
+      <ul>
+        <li>5 Projects</li>
+        <li>Basic Support</li>
+        <li>1 User Account</li>
+        <li>Limited Storage</li>
+      </ul>
+
+      <a href="#" class="button">Get Started</a>
+    </section>
+
+    <section class="pricing-card featured">
+      <span class="popular">POPULAR</span>
+      <h2>Standard</h2>
+      <p class="price">₦10,000<span>/month</span></p>
+      <p class="description">Best for growing businesses</p>
+
+      <ul>
+        <li>20 Projects</li>
+        <li>Priority Support</li>
+        <li>5 User Accounts</li>
+        <li>More Storage</li>
+      </ul>
+
+      <a href="#" class="button">Choose Plan</a>
+    </section>
+
+    <section class="pricing-card">
+      <h2>Premium</h2>
+      <p class="price">₦20,000<span>/month</span></p>
+      <p class="description">For advanced users</p>
+
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>24/7 Support</li>
+        <li>Unlimited Users</li>
+        <li>Maximum Storage</li>
+      </ul>
+
+      <a href="#" class="button">Go Premium</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Find the plan that works best for you.</p>
+  </footer>
+
+</body>
+</html>

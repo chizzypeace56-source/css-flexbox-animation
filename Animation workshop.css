@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef6ff;
+  text-align: center;
+  padding: 25px 10px;
+  overflow-x: hidden;
+}
+
+header h1 {
+  color: #173b70;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #555;
+  margin-bottom: 35px;
+}
+
+.wheel {
+  width: 280px;
+  height: 280px;
+  border: 6px solid #173b70;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  animation: rotate-wheel 10s linear infinite;
+}
+
+.spoke {
+  position: absolute;
+  width: 4px;
+  height: 50%;
+  background: #173b70;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom center;
+}
+
+.spoke1 {
+  transform: rotate(0deg);
+}
+
+.spoke2 {
+  transform: rotate(60deg);
+}
+
+.spoke3 {
+  transform: rotate(120deg);
+}
+
+.spoke4 {
+  transform: rotate(180deg);
+}
+
+.spoke5 {
+  transform: rotate(240deg);
+}
+
+.spoke6 {
+  transform: rotate(300deg);
+}
+
+.cabin {
+  width: 38px;
+  height: 38px;
+  border: 3px solid white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 2px 5px #777;
+}
+
+.cabin1 {
+  top: -19px;
+  left: calc(50% - 19px);
+  background: #e63946;
+}
+
+.cabin2 {
+  top: 50px;
+  right: 1px;
+  background: #457b9d;
+}
+
+.cabin3 {
+  bottom: 50px;
+  right: 1px;
+  background: #2a9d8f;
+}
+
+.cabin4 {
+  bottom: -19px;
+  left: calc(50% - 19px);
+  background: #f4a261;
+}
+
+.cabin5 {
+  bottom: 50px;
+  left: 1px;
+  background: #6a4c93;
+}
+
+.cabin6 {
+  top: 50px;
+  left: 1px;
+  background: #e76f51;
+}
+
+.center {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #f4c542;
+  border: 4px solid #173b70;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.stand {
+  width: 12px;
+  height: 115px;
+  background: #173b70;
+  margin: 0 auto;
+}
+
+.caption {
+  margin-top: 20px;
+  color: #173b70;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@keyframes rotate-wheel {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 350px) {
+  .wheel {
+    width: 240px;
+    height: 240px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+}
